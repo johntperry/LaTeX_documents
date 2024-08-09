@@ -1,0 +1,91 @@
+%--------------------
+% Packages
+% -------------------
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{gentium}
+\usepackage{mathptmx} % Use Times Font
+
+\usepackage[sorting=none]{biblatex}
+\renewbibmacro*{urldate}{
+    (visited on \printfield{urlday}/\printfield{urlmonth}/\printfield{urlyear})
+}
+\addbibresource{bibliography.bib}
+
+
+\usepackage[pdftex]{graphicx} % Required for including pictures
+\usepackage[pdftex,linkcolor=black,pdfborder={0 0 0}]{hyperref} % Format links for pdf
+\usepackage{calc} % To reset the counter in the document after title page
+\usepackage{enumitem} % Includes lists
+
+\frenchspacing % No double spacing between sentences
+\linespread{1.2} % Set linespace
+\usepackage[a4paper, lmargin=0.1666\paperwidth, rmargin=0.1666\paperwidth, tmargin=0.1111\paperheight, bmargin=0.1111\paperheight]{geometry} %margins
+%\usepackage{parskip}
+
+\usepackage[all]{nowidow} % Tries to remove widows
+\usepackage[protrusion=true,expansion=true]{microtype} % Improves typography, load after fontpackage is selected
+
+%-----------------------
+% Set pdf information and add title, fill in the fields
+%-----------------------
+\hypersetup{ 	
+pdfsubject = {Why is it so hard to innovate new approaches to how me manafacture things?},
+pdftitle = {Report on the inefficiency of current manufacturing practices.},
+pdfauthor = {John T. Perry}
+}
+
+%-----------------------
+% Begin document
+%-----------------------
+\begin{document} 
+
+
+
+\section{Introduction}
+
+Clean and sustainable manufacturing methods are key factors in curbing the constant environmental meltdown in the world today. Being a driver for more than 20\% of accumulated greenhouse gas emissions\cite{kazakova2022sustainable}, manufacturing is a key sector for reducing global environmental impact. Manufacturing is also responsible for issues such as global resource depletion and water pollution.
+% https://www.conserve-energy-future.com/15-current-environmental-problems.php
+
+This is why we must endeavor towards sustainable manufacturing practices, which use "economically-sound processes that minimize negative environmental impacts while conserving energy and natural resources\cite{usepa2024sustainable}."
+
+The fundamental principles of sustainable manufacturing are multiple: To use less of earths limited natural resources (i.e. materials and energy) by increasing their productivity dramatically; to shift to production models inspired by that of nature by reducing unwanted outputs and recycling outputs among others; a shift to solution-based business models\footnote{A business model where a good or service is designed and delivered based on input from the consumer}; and a gradual shift to more environmentally friendly input materials, such as using renewable materials instead of non-renewable\cite{despeisse2012emergence}. Yet with how significant sustainable manufacturing appears to be, it can seem that not enough is done to improve the efficacy of sustainable practices; some possible reasons for this are discussed in the following sections.
+
+
+
+\section{Barriers to Innovation in Manufacturing}
+
+
+\subsection*{Technological and Practical Barriers}
+
+Whether one will admit it or not, there is a limit to the level of technological development that can be made with the resources available at any given point, and the costs associated with trailblazing the path to innovation can prove to be costly. Approximately 1/3 of businesses report challenges in finding the funds to innovate - quoting insufficient R\&D tax incentives along with a lack of supportive government policies in limiting their progress towards sustainability\cite{ayming2024barometer}.
+
+These high up-front costs coincide with other costs that must be considered with the introduction of new processes; including the implementation and distribution of new processes, for instance obtaining the new equipment needed for new production methods, as well as recruiting new employees or retraining existing staff with new processes.
+% Maybe finds data on costs of each of these %
+
+Another factor that affects the implementation of new sustainable processes are limitations caused by the supply chain. Over the past 5 years supply chains have been particularly difficult for a company to navigate, with the COVID-19 pandemic limiting the rate of trade and increasing uncertainty for businesses, consequently affecting the priorities of organisations away from environmental issues, towards economic and most notably social issues\cite{barreiro2020changes}.
+
+
+\subsection*{Corporate Culture and Incentives}
+
+The decisions of how a company invests into research and development ultimately falls on those in charge. It is for this reason that the culture within companies and departments and the incentives placed upon them play a key role not just on the levels of investment in research and development, but also the direction that the company takes following its investment.
+
+The automotive industry is a good example of where the focus of investment can affect where innovation appears. Upon the introduction of Battery Electric Vehicles (BEV), the lifetime emissions of vehicles drastically decreased as cars increasingly ran off of batteries\cite{bieker2021global}. However this now makes the emissions of manufacturing BEVs much more significant, given that the carbon footprint from manufacturing now makes up a far larger proportion of the life-cycle greenhouse gas emissions, making up almost half of all emissions for BEVs registered in Europe in 2021. The emissions from their production even exceeding that of their fossil fuel burning counterparts\cite{bieker2021global} due to the large number of batteries used. Investment must now be focused more heavily on improving sustainable manufacturing such as reducing material usage, a trend ignored by the massive American market which increasingly desires larger vehicles such as pickup trucks and SUVs\cite{moawad2016assessment}.\\
+
+Another important consideration that companies consider when improving their processes is consumer behaviour. As consumer interest in different products varies over time the priorities of a company also shifts to keep up with the changing market. Subsequently, if consumers demand more environmentally friendly products companies will follow; on the flip side, if consumers are apathetic to the environmental impact of product production then companies will be less inclined to prioritise sustainable methods\cite{buell2021transparency}. Increasing public awareness and education to environmental issues would subsequently have an effect on the actions that companies choose to take.
+
+Continuing with the theme of social responsibility, a forward thinking corporate culture with a positive view on sustainable innovation leads to an increase in investment on green technologies and processes. This is explored in the concept of Corporate Social Responsibility (CSR)\footnote{The idea that a company is socially accountable to itself, its stakeholders and to the public.} under the idea that it creates consumer goodwill and lets employees feel their personal beliefs align with that of the company, leading to improvements in employee behavior. This can be shown in metrics such as attendance, job performance and stress levels. Companies that employ CSR methodologies also enjoy higher rates of job applications and employee retention due to their positive perception by the public\cite{brammer2007contribution}.
+
+
+
+\section{Conclusion}
+
+It should now be clearer how the progress that is made on how we manufacture goods is dependent on a variety of key areas, with both behavioural and technical limitations to the rate at which improvements to the environmental impact of industry can be seen. However with the scale at which manufacturing operates, and the environmental impact for which it is responsible are factors that cannot be understated.
+
+A theme that can be noticed throughout, however, is that companies' decisions act in the name of profit. Subsequently any investment that they make to reducing their environmental impact will have that in mind, whether directly (pursuing quick gains with BEVs) or indirectly (higher customer perception, leading to greater profits). As it can be seen that companies' decisions will be influenced by those outside the company, the future of manufacturing depends on both the public and governments to provide incentives to a more sustainable future. 
+
+
+\printbibliography
+
+\end{document}
